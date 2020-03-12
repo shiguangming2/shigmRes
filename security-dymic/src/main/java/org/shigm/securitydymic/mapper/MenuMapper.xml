@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="org.shigm.securitydymic.mapper.MenuMapper">
+    <resultMap id="BaseResultMap" type="org.shigm.securitydymic.bean.Menu">
+        <id property="id" column="id"/>
+        <result property="pattern" column="pattern"/>
+        <collection property="roles" ofType="org.shigm.securitydymic.bean.Role">
+            <id column="id" property="id"/>
+            <result column="rname" property="name"/>
+            <result column="rnameZh" property="nameZh"/>
+        </collection>
+    </resultMap>
+    <select id="getAllMenus" resultMap="BaseResultMap">
+        select  m.*,r.id as rid,r.name as rname,r.nameZh as rnameZh from menu m left join menu_role mr on m.id=mr.mid left join role r on mr.rid=r.id
+    </select>
+</mapper>

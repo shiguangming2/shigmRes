@@ -1,0 +1,15 @@
+<ehcache>
+    <diskstore path="java.io.File.TempDirectory/ehcache">
+        <defaultCache
+            maxElementsMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="false"
+            diskPersistent="false"
+            disExpiryThreadIntervalSeconds="120"
+        />
+        <cache  name="myCache"
+        />
+    </diskstore>
+</ehcache>

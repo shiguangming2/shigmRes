@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="org.shigm.securitydymic.mapper.UserMapper">
+    <select id="loadUserByUsername" resultType="org.shigm.securitydymic.bean.User">
+        select * from  user  where username=#{username};
+    </select>
+    <select id="getRolesById" resultType="org.shigm.securitydymic.bean.Role">
+        select * from Role where id in (select rid from user_role where uid=#{id})
+    </select>
+</mapper>

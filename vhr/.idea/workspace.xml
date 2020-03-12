@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6d9e319-7b1d-4753-829a-f54da9ddbf83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/config/MyDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/config/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/config/SystemConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/emp/EmpBasicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/system/basic/DepartMentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/system/basic/HrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/system/basic/JobLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/system/basic/PermissController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/system/basic/PosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vhrserver/vhr-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/AdjustSalaryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/AdjustSalaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/AppraiseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/AppraiseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/DepartmentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmpSalaryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmpSalaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeecMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeecMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeremoveMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeeremoveMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeetrainMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/EmployeetrainMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/HrMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/HrMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/HrRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/HrRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/JobLevelMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/JobLevelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MenuRoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MenuRoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MsgContentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/MsgContentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/NationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/NationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/OpLogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/OpLogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/PoliticsstatusMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/PoliticsstatusMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/PositionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/PositionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/SalaryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/SalaryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/SysMsgMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/mapper/SysMsgMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/AdjustSalary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Appraise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/EmpSalary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Employeeec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Employeeremove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Employeetrain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Hr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/HrRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/JobLevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/MenuRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/MsgContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Nation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/OpLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Politicsstatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/RespBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/Salary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/model/SysMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/service/HrService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vhrserver/vhr-web/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/vhrserver/vhr-model/target/" />
+    <ignored path="$PROJECT_DIR$/vhrserver/vhr-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/vhrserver/target/" />
+    <ignored path="$PROJECT_DIR$/vhrserver/vhr-service/target/" />
+    <ignored path="$PROJECT_DIR$/vhrserver/vhr-web/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/MenuService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/NationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PoliticsstatusService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PositionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PositionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PoliticsstatusMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="45" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/MenuRoleMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/JobLevelService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/JobLevelMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/HrService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vhrserver/vhr-web" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vhrserver/vhr-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/pom.xml" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/DepartMentService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/HrService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/JobLevelService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PoliticsstatusService.java" />
+        <option value="$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PositionService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\localRepository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vhr" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vhr-mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vhr-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vhr-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="vhr-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-45" />
+    <option name="y" value="220" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vhr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="vhrserver" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy" type="462c0819:PsiDirectoryNode" />
+              <item name="vhr" type="462c0819:PsiDirectoryNode" />
+              <item name="VhrApplication" type="1a9f42e2:ClassTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.vhr-web">
+    <configuration name="VhrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="vhr-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.javaboy.vhr.VhrApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vhr-web" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="vhr-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.javaboy.vhr.VhrApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.VhrApplication" />
+      <item itemvalue="Spring Boot.vhr-web" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6d9e319-7b1d-4753-829a-f54da9ddbf83" name="Default Changelist" comment="" />
+      <created>1584006416639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584006416639</updated>
+      <workItem from="1584006417799" duration="1711000" />
+      <workItem from="1584008508209" duration="414000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2125000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29384205" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32896653" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3299866" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3299866" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-web/src/main/java/org/javaboy/vhr/VhrApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/Department.java" />
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/Appraise.java" />
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/AdjustSalary.java" />
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/utils/HrUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PoliticsstatusMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PositionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/AdjustSalaryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/AdjustSalaryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/DepartmentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/DepartMentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/HrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/HrRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/JobLevelMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/HrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/JobLevelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/MenuRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/NationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PoliticsstatusMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PoliticsstatusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-mapper/src/main/java/org/javaboy/vhr/mapper/PositionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vhrserver/vhr-service/src/main/java/org/javaboy/vhr/service/PositionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>群聊</title>
+    <script src="webjars/jquery/jquery.min.js"></script>
+    <script src="webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="webjars/stomp-websocket/stomp.min.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="button" value="连接" id="connect"/></td>
+        <td><input type="button" value="断开连接" id="disconnect" disabled="disabled"/></td>
+    </tr>
+</table>
+<br/>
+消息内容<input type="text" id="content"/> 收件人<input type="text" id="to"/><br/>
+<input type="button" value="发送" id="send">
+<div id="conversation"></div>
+<script>
+$(function () {
+   $('#connect').click(function () {
+       connect();
+   });
+    $('#send').click(function () {
+       stopclient.send("/app/chat",{},JSON.stringify({'to':$('#to').val(),'content':$('#content').val()}))
+    });
+    $('#disConnect').click(function () {
+        if(stopclient!=null){
+            stopclient.disconnect();
+        }
+        setConnected(false)
+    });
+});
+var stopclient=null;
+    function connect() {
+        var socket=new SockJS('/chat');
+        stopclient=Stomp.over(socket);
+        stopclient.connect({},function (success) {
+            setConnected(true);
+            stopclient.subscribe('/user/queue/chat',function (msg) {
+                showgreeting(JSON.parse(msg.body));
+            })
+        })
+    }
+    function setConnected(flag) {
+        $('#connect').prop("disabled",flag);
+        $('#disConnect').prop("disabled",!flag);
+        if(flag){
+             $('#chat').show()
+        }else{
+             $('#chat').hide()
+
+        }
+    }
+    function showgreeting(msg) {
+        $('#conversation').append('<div>'+ msg.from+":"+msg.content+'</div>')
+    }
+</script>
+</body>
+</html>
